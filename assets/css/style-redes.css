@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    background-color: #E5D0FD;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header img {
+    width: 100px;
+}
+
+header nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav a:active {
+    color: white;
+}
+
+:root {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.logos {
+    width: 200px;
+    margin: 14.8vh auto;
+    text-align: center;
+}
+
+.logos img {
+    width: 150px;
+}
+
+.logos p, .logos a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    header nav a {
+        font-size: 18px;
+    }
+
+    .logos {
+        width: 300px;
+        margin: 12vh auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logos img {
+        width: 180px;
+    }
+
+    .logos p {
+        font-size: 36px;
+    }
+}
+
+@media only screen and (min-width: 1220px) {
+    header nav a {
+        font-size: 20px;
+    }
+
+    .logos {
+        width: 300px;
+        margin: 9vh auto;
+        text-align: center;
+    }
+
+    .logos img {
+        width: 220px;
+    }
+
+    .logos p {
+        font-size: 40px;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+
+    footer small {
+        font-size: 18px;
+    }
+}

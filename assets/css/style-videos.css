@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    background-color: #E5D0FD;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header img {
+    width: 100px;
+}
+
+header nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav a:active {
+    color: white;
+}
+
+:root {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+video {
+    width: 92%;
+    display: flex;
+    margin: 20px auto;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    header nav a {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1220px) {
+    header nav a {
+        font-size: 20px;
+    }
+
+    main {
+        width: 1110px;
+        margin: 0 auto;
+    }
+
+    video:first-child {
+        width: 1100px;
+    }
+
+    .video2, .video1 {
+        width: 540px;
+        display: inline;
+        margin: 0 auto;
+    }
+
+    .video2 {
+        margin-right: 20px;
+    }
+
+    .video1 {
+        height: 540px;
+        object-fit: cover;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+
+    footer small {
+        font-size: 18px;
+    }
+}

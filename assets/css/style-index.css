@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    background-color: #E5D0FD;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header img {
+    width: 100px;
+}
+
+header nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav a:active {
+    color: white;
+}
+
+:root {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div {
+    color: #843088;
+    text-align: center;
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 70px;
+    letter-spacing: 10px;
+    -webkit-text-stroke: 0.5px white;
+}
+
+div h1 span {
+    letter-spacing: 0;
+}
+
+div p span {
+    -webkit-text-stroke: 0;
+}
+
+p {
+    font-size: 40px;
+    padding: 10px 50px 0 50px;
+    -webkit-text-stroke: 0.3px white;
+}
+
+.imgs {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.imgs>img {
+    margin-bottom: 16px;
+}
+
+.imgs img:nth-child(2) {
+    padding-bottom: 20px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    header nav a {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 82px;
+    }
+
+    p {
+        font-size: 44px;
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1220px) {
+    header nav a {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 140px;
+        -webkit-text-stroke: 0.7px white;
+    }
+
+    p {
+        font-size: 72px;
+        width: 700px;
+        -webkit-text-stroke: 0.5px white;
+    }
+
+    .imgs {
+        flex-direction: row;
+        padding: 0;
+        width: 1100px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .imgs > img {
+        margin: 4vh 0;
+    }
+
+    .imgs img:nth-child(2) {
+        object-fit: cover;
+        padding-bottom: 0;
+        margin-left: 20px;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+
+    footer small {
+        font-size: 18px;
+    }
+}

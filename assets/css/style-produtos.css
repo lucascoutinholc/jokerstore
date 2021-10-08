@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    background-color: #E5D0FD;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header img {
+    width: 100px;
+}
+
+header nav {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header nav a:active {
+    color: white;
+}
+
+:root {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+article img {
+    width: 150px;
+}
+
+.titles {
+    border: 0.3px solid white;
+    background-color: #843088;
+    width: 310px;
+    border-radius: 10px 10px 0 0;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+article {
+    width: 310px;
+    margin: 10px auto;
+}
+
+article h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    -webkit-text-stroke: 1px black;
+}
+
+img:first-child {
+    margin-right: 6px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    padding: 30px 0 20px 0;
+}
+
+@media only screen and (min-width: 768px) {
+    header nav a {
+        font-size: 18px;
+    }
+    
+    .titles {
+        width: 410px;       
+    }
+
+    article {
+        width: 410px;
+        margin: 10px auto;
+    }
+
+    article img {
+        width: 200px;
+    }
+
+    article h3 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 1220px) {
+    header nav a {
+        font-size: 20px;
+    }
+
+    main {
+        width: 1040px;
+        margin: 0 auto;
+    }
+
+    .titles {
+        width: 510px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    article {
+        width: 510px;
+        margin-top: 0;
+    }
+
+    article img {
+        width: 250px;
+    }
+
+    article h3 {
+        font-size: 24px;
+    }
+
+    footer small {
+        font-size: 18px;
+    }
+}
